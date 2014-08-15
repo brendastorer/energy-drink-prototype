@@ -1,92 +1,8 @@
-/* COLORS HEXIDECIMAL REFERENCE
-Citrus Burst #f47c08
-Kiwi Strawberry #c33a89
-Triple Berry #cc3012
-Lemon Lime Rush #52a534
-Grape Fusion #724598
-Blue Raspberry #0c71b7
-Black Cherry #990b0d
-Wild Peach #e5644f
-Berry Blast #
-Yellow accent color #ffe800
-*/
-
-/* CLEARS & DEFAULTS*/
-ul, li, div, p {
-	margin:0;
-	padding:0;
-}
-
 a {
-	text decoration:none;
-}
-
-/* STATIC BACKGROUND */
-
-body {
-	background-color: #000;
-	margin:0;
-	font-family:Arial, sans-serif;
-}
-
-#swirl-glow {
-	background-image: url(../images/swirl-glow-bg.png);
-	background-repeat: no-repeat;
-	background-position: center -50px;
-	position:relative;
+	text-decoration:none;
 }
 
 /* HEADER & NAV */
-#header {
-	width:964px;
-	margin: 0 auto;
-	position:relative;
-}
-
-#nav-bg {
-	background-image: url(../images/nav-gradient-bg.png);
-	background-repeat:repeat-x;
-	background-position: bottom left;
-	height:28px;
-	width:100%;
-	position:absolute;
-}
-
-#nav {
-	font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	color:#fff;
-	font-size:16px;
-	text-transform:uppercase;
-	letter-spacing:1px;
-	width:964px;
-	position:absolute;
-	top:0;
-	left:200px;
-	z-index:100;
-}
-
-#nav ul {
-	list-style-type:none;
-	position:relative;
-}
-
-#nav li {
-	float:left;
-	margin:0 43px 0 0;
-}
-
-#nav a {
-	color:#fff;
-	display:block;
-	text-decoration:none;
-	padding:4px 20px;
-}
-
-#nav li a:hover {
-	background-color:#000;
-}
 
 #shopping-cart {
 	background-image: url(../images/shopping-cart.png);
@@ -119,19 +35,6 @@ body {
 	z-index:1000;
 }
 
-/* CONTENT ON COLOR CHANGING BG */
-
-#content {
-	width:964px;
-	margin: 0 auto 0 auto;
-	position:relative;
-	text-align:right;
-	overflow:hidden;
-}
-
-.the-drinks #content {
-	height:500px;
-}
 
 /* CONTENT ON BLACK BG */
 
@@ -180,35 +83,7 @@ body {
 	z-index:100;
 }
 
-/* Home */
-
-#slides {
-
-}
-
-#home-promos-container {
-	width:100%%;
-}
-
-.home-promo {
-	background-color:#000;
-	float:left;
-	margin:20px 8px 30px 8px;
-	width:305px;
-	height:161px;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
-	    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
-	    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.50);
-}
-
-
 /* Product Bottles Pages */
-
-#content {
-}
 
 #btl-image {
 	width:154px;
@@ -277,23 +152,21 @@ body {
 
 /* FLAVORS */
 
-.bg-citrus-burst {background-color: #f47c08;}
+.bg-citrus-burst {background-color: $citrus-burst;}
 
-.bg-kiwi-straw {background-color: #c33a89;}
+.bg-kiwi-straw {background-color: $kiwi-strawberry;}
 
-.bg-triple-berry {background-color: #cc3012;}
+.bg-triple-berry {background-color: $triple-berry;}
 
-.bg-lemon-lime {background-color: #52a534;}
+.bg-lemon-lime {background-color: $lemon-lime-rush;}
 
-.bg-grape-fusion {background-color: #724598;}
+.bg-grape-fusion {background-color: $grape-fusion;}
 
-.bg-blue-rasp {background-color: #0c71b7;}
+.bg-blue-rasp {background-color: $blue-raspberry;}
 
-.bg-black-cherry {background-color: #990b0d}
+.bg-black-cherry {background-color: $black-cherry;}
 
-.bg-wild-peach {background-color: #e5644f;}
-
-.bg-berry-blast {background-color: #be1722;}
+.bg-wild-peach {background-color: $wild-peach;}
 
 .logo-citrus-burst {background-image: url(../images/logo-citrus-burst.png);}
 
@@ -310,8 +183,6 @@ body {
 .logo-black-cherry {background-image: url(../images/logo-black-cherry.png);}
 
 .logo-wild-peach {background-image: url(../images/logo-wild-peach.png);}
-
-.logo-berry-blast {background-image: url(../images/logo-berry-blast.png);}
 
 .btl-citrus-burst {background-image: url(../images/pbottle-citrus-burst.png);}
 

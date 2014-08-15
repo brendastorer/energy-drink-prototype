@@ -1,0 +1,49 @@
+header {
+  -webkit-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
+  height: 28px;
+  width: 100%;
+
+  section {
+    margin: 0 auto;
+    position: relative;
+    width: $body-width;
+  }
+}
+
+nav {
+  font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color:#fff;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: #fff;
+    display: block;
+    margin: 0 22px;
+    padding: 6px 20px;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
