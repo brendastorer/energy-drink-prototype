@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "ExpresswayCondensedSemiBold";
+  src: url("../fonts/expressway-condensed-sb.eot");
+  src: local("☺︎"),
+    url("../fonts/expressway-condensed-sb.woff") format("woff"),
+    url("../fonts/expressway-condensed-sb.otf") format("opentype"),
+    url("../fonts/expressway-condensed-sb.svg#ExpresswayCondensedSemiBold") format("svg");
+}
+
+@font-face {
+  font-family: "ExpresswaySemiBold";
+  src: url("../fonts/expressway-sb.eot");
+  src: local("☺︎"),
+    url("../fonts/expressway-sb.woff") format("woff"),
+    url("../fonts/expressway-sb.otf") format("opentype"),
+    url("../fonts/expressway-sb.svg#ExpresswaySemiBold") format("svg");
+}
+
+@font-face {
+  font-family: "ExpresswaySemiBoldItalic";
+  src: url("../fonts/expressway-sb-italic.eot");
+  src: local("☺︎"),
+    url("../fonts/expressway-sb-italic.woff") format("woff"),
+    url("../fonts/expressway-sb-italic.otf") format("opentype"),
+    url("../fonts/expressway-sb-italic.svg#ExpresswaySemiBoldItalic") format("svg");
+}
