@@ -11,8 +11,79 @@
   font-family: "ExpresswaySemiBoldItalic";
   src: url("../fonts/expressway-sb-italic.eot");
   src: local("☺︎"), url("../fonts/expressway-sb-italic.woff") format("woff"), url("../fonts/expressway-sb-italic.otf") format("opentype"), url("../fonts/expressway-sb-italic.svg#ExpresswaySemiBoldItalic") format("svg"); }
-body {
-  background-color: #f47c08;
+.page-citrus-burst {
+  background-color: #f47c08; }
+
+.page-kiwi-strawberry {
+  background-color: #c33a89; }
+
+.page-triple-berry {
+  background-color: #cc3012; }
+
+.page-lemon-lime-rush {
+  background-color: #52a534; }
+
+.page-grape-fusion {
+  background-color: #724598; }
+
+.page-blue-raspberry {
+  background-color: #0c71b7; }
+
+.page-black-cherry {
+  background-color: #990b0d; }
+
+.page-wild-peach {
+  background-color: #e5644f; }
+
+.logo-citrus-burst {
+  background-image: url(../images/logo-citrus-burst.png); }
+
+.logo-kiwi-strawberry {
+  background-image: url(../images/logo-kiwi-straw.png); }
+
+.logo-triple-berry {
+  background-image: url(../images/logo-triple-berry.png); }
+
+.logo-lemon-lime-rush {
+  background-image: url(../images/logo-lemon-lime.png); }
+
+.logo-grape-fusion {
+  background-image: url(../images/logo-grape-fusion.png); }
+
+.logo-blue-raspberry {
+  background-image: url(../images/logo-blue-rasp.png); }
+
+.logo-black-cherry {
+  background-image: url(../images/logo-black-cherry.png); }
+
+.logo-wild-peach {
+  background-image: url(../images/logo-wild-peach.png); }
+
+.large-bottle-citrus-burst {
+  background-image: url(../images/bottle-citrus-burst.png); }
+
+.large-bottle-kiwi-strawberry {
+  background-image: url(../images/bottle-kiwi-straw.png); }
+
+.large-bottle-triple-berry {
+  background-image: url(../images/bottle-triple-berry.png); }
+
+.large-bottle-lemon-lime-rush {
+  background-image: url(../images/bottle-lemon-lime.png); }
+
+.large-bottle-grape-fusion {
+  background-image: url(../images/bottle-grape-fusion.png); }
+
+.large-bottle-blue-raspberry {
+  background-image: url(../images/bottle-blue-rasp.png); }
+
+.large-bottle-black-cherry {
+  background-image: url(../images/bottle-black-cherry.png); }
+
+.large-bottle-wild-peach {
+  background-image: url(../images/bottle-wild-peach.png); }
+
+#page {
   font-family: Arial, sans-serif;
   background-image: url(../images/swirl-glow-bg.png);
   background-repeat: no-repeat;
@@ -135,7 +206,7 @@ a {
   z-index: 100; }
 
 /* Product Bottles Pages */
-#btl-image {
+#large-bottle {
   width: 154px;
   height: 459px;
   position: absolute;

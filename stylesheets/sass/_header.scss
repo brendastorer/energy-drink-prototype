@@ -12,6 +12,28 @@ header {
   }
 }
 
+#logo {
+  background-image: url(../images/logo.png);
+  background-repeat:no-repeat;
+  position:absolute;
+  top:23px;
+  left:34px;
+  width:121px;
+  height:73px;
+  z-index:10000;
+}
+
+#logo-bg {
+  background-repeat:no-repeat;
+  position:absolute;
+  top:-5px;
+  left:0;
+  width:189px;
+  height:134px;
+  z-index:1000;
+}
+
+
 nav {
   font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
   font-weight: normal;

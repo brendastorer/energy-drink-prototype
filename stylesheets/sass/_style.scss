@@ -2,39 +2,6 @@ a {
 	text-decoration:none;
 }
 
-/* HEADER & NAV */
-
-#shopping-cart {
-	background-image: url(../images/shopping-cart.png);
-	background-repeat:no-repeat;
-	height:20px;
-	width:18px;
-	position:absolute;
-	top:5px;
-	right:0;
-}
-
-#logo {
-	background-image: url(../images/logo.png);
-	background-repeat:no-repeat;
-	position:absolute;
-	top:23px;
-	left:34px;
-	width:121px;
-	height:73px;
-	z-index:10000;
-}
-
-#logo-bg {
-	background-repeat:no-repeat;
-	position:absolute;
-	top:-5px;
-	left:0;
-	width:189px;
-	height:134px;
-	z-index:1000;
-}
-
 
 /* CONTENT ON BLACK BG */
 
@@ -85,7 +52,7 @@ a {
 
 /* Product Bottles Pages */
 
-#btl-image {
+#large-bottle {
 	width:154px;
 	height:459px;
 	position:absolute;

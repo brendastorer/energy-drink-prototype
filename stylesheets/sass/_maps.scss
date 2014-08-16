@@ -1,0 +1,50 @@
+$page-colors: (
+  citrus-burst: #f47c08,
+  kiwi-strawberry: #c33a89,
+  triple-berry: #cc3012,
+  lemon-lime-rush: #52a534,
+  grape-fusion: #724598,
+  blue-raspberry: #0c71b7,
+  black-cherry: #990b0d,
+  wild-peach: #e5644f
+);
+
+$logos: (
+  citrus-burst: url(../images/logo-citrus-burst.png),
+  kiwi-strawberry: url(../images/logo-kiwi-straw.png),
+  triple-berry: url(../images/logo-triple-berry.png),
+  lemon-lime-rush: url(../images/logo-lemon-lime.png),
+  grape-fusion: url(../images/logo-grape-fusion.png),
+  blue-raspberry: url(../images/logo-blue-rasp.png),
+  black-cherry: url(../images/logo-black-cherry.png),
+  wild-peach: url(../images/logo-wild-peach.png)
+);
+
+$bottles: (
+  citrus-burst: url(../images/bottle-citrus-burst.png),
+  kiwi-strawberry: url(../images/bottle-kiwi-straw.png),
+  triple-berry: url(../images/bottle-triple-berry.png),
+  lemon-lime-rush: url(../images/bottle-lemon-lime.png),
+  grape-fusion: url(../images/bottle-grape-fusion.png),
+  blue-raspberry: url(../images/bottle-blue-rasp.png),
+  black-cherry: url(../images/bottle-black-cherry.png),
+  wild-peach: url(../images/bottle-wild-peach.png)
+);
+
+@each $page-color, $color in $page-colors {
+  .page-#{$page-color} {
+      background-color: $color;
+  }
+}
+
+@each $logo, $swirl-image in $logos {
+  .logo-#{$logo} {
+      background-image: $swirl-image;
+  }
+}
+
+@each $bottle, $image in $bottles {
+  .large-bottle-#{$bottle} {
+      background-image: $image;
+  }
+}
