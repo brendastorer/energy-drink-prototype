@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+  var drinks = ["citrus-burst", "kiwi-strawberry", "triple-berry", "lemon-lime-rush", "grape-fusion", "blue-raspberry", "black-cherry", "wild-peach"];
+  console.log (drinks [0]);
+
   $(".block").toggle(function() {
     $(this).animate({ backgroundColor: "#c33a89" }, 1500);
     },function() {

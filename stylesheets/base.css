@@ -1,4 +1,9 @@
 @charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: "ExpresswayCondensedSemiBold";
   src: url("../fonts/expressway-condensed-sb.eot");
@@ -36,28 +41,28 @@
   background-color: #e5644f; }
 
 .logo-citrus-burst {
-  background-image: url(../images/logo-citrus-burst.png); }
+  background-image: url(../images/swirl-citrus-burst.svg); }
 
 .logo-kiwi-strawberry {
-  background-image: url(../images/logo-kiwi-straw.png); }
+  background-image: url(../images/swirl-kiwi-straw.svg); }
 
 .logo-triple-berry {
-  background-image: url(../images/logo-triple-berry.png); }
+  background-image: url(../images/swirl-triple-berry.svg); }
 
 .logo-lemon-lime-rush {
-  background-image: url(../images/logo-lemon-lime.png); }
+  background-image: url(../images/swirl-lemon-lime.svg); }
 
 .logo-grape-fusion {
-  background-image: url(../images/logo-grape-fusion.png); }
+  background-image: url(../images/swirl-grape-fusion.svg); }
 
 .logo-blue-raspberry {
-  background-image: url(../images/logo-blue-rasp.png); }
+  background-image: url(../images/swirl-blue-rasp.svg); }
 
 .logo-black-cherry {
-  background-image: url(../images/logo-black-cherry.png); }
+  background-image: url(../images/swirl-black-cherry.svg); }
 
 .logo-wild-peach {
-  background-image: url(../images/logo-wild-peach.png); }
+  background-image: url(../images/swirl-wild-peach.svg); }
 
 .large-bottle-citrus-burst {
   background-image: url(../images/bottle-citrus-burst.png); }
@@ -98,9 +103,7 @@ main {
   height: 500px; }
 
 header {
-  -webkit-box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
   height: 28px;
   width: 100%; }
   header section {
@@ -108,11 +111,25 @@ header {
     position: relative;
     width: 1000px; }
 
+.logo {
+  position: absolute;
+  top: 23px;
+  left: 34px;
+  height: 73px;
+  width: 121px;
+  z-index: 10000; }
+
+.logo-swirl {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  height: 113px;
+  width: 169px;
+  z-index: 1000; }
+
 nav {
-  font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
   color: #fff;
+  font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -129,42 +146,8 @@ nav {
     nav a:hover {
       background-color: black; }
 
-.shopping-cart {
-  position: absolute;
-  top: 5px;
-  right: 20px; }
-
 a {
   text-decoration: none; }
-
-/* HEADER & NAV */
-#shopping-cart {
-  background-image: url(../images/shopping-cart.png);
-  background-repeat: no-repeat;
-  height: 20px;
-  width: 18px;
-  position: absolute;
-  top: 5px;
-  right: 0; }
-
-#logo {
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 23px;
-  left: 34px;
-  width: 121px;
-  height: 73px;
-  z-index: 10000; }
-
-#logo-bg {
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 189px;
-  height: 134px;
-  z-index: 1000; }
 
 /* CONTENT ON BLACK BG */
 #black-bg-container {
@@ -258,58 +241,3 @@ a {
 
 #btl-nav li.buy-now a:hover, #btl-nav li.buy-now a.active {
   background-position: -401px -36px; }
-
-/* FLAVORS */
-.bg-citrus-burst {
-  background-color: #f47c08; }
-
-.bg-kiwi-straw {
-  background-color: #c33a89; }
-
-.bg-triple-berry {
-  background-color: #cc3012; }
-
-.bg-lemon-lime {
-  background-color: #52a534; }
-
-.bg-grape-fusion {
-  background-color: #724598; }
-
-.bg-blue-rasp {
-  background-color: #0c71b7; }
-
-.bg-black-cherry {
-  background-color: #990b0d; }
-
-.bg-wild-peach {
-  background-color: #e5644f; }
-
-.logo-citrus-burst {
-  background-image: url(../images/logo-citrus-burst.png); }
-
-.logo-kiwi-straw {
-  background-image: url(../images/logo-kiwi-straw.png); }
-
-.logo-triple-berry {
-  background-image: url(../images/logo-triple-berry.png); }
-
-.logo-lemon-lime {
-  background-image: url(../images/logo-lemon-lime.png); }
-
-.logo-grape-fusion {
-  background-image: url(../images/logo-grape-fusion.png); }
-
-.logo-blue-rasp {
-  background-image: url(../images/logo-blue-rasp.png); }
-
-.logo-black-cherry {
-  background-image: url(../images/logo-black-cherry.png); }
-
-.logo-wild-peach {
-  background-image: url(../images/logo-wild-peach.png); }
-
-.btl-citrus-burst {
-  background-image: url(../images/pbottle-citrus-burst.png); }
-
-.btl-kiwi-straw {
-  background-image: url(../images/pbottle-kiwi-straw.png); }

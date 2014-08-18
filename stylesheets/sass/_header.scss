@@ -1,7 +1,5 @@
 header {
-  -webkit-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
-  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.1);
   height: 28px;
   width: 100%;
 
@@ -12,33 +10,23 @@ header {
   }
 }
 
-#logo {
-  background-image: url(../images/logo.png);
-  background-repeat:no-repeat;
-  position:absolute;
-  top:23px;
-  left:34px;
-  width:121px;
-  height:73px;
-  z-index:10000;
+.logo {
+  @include position(absolute, 23px 0 0 34px);
+  height: 73px;
+  width: 121px;
+  z-index: 10000;
 }
 
-#logo-bg {
-  background-repeat:no-repeat;
-  position:absolute;
-  top:-5px;
-  left:0;
-  width:189px;
-  height:134px;
-  z-index:1000;
+.logo-swirl {
+  @include position(absolute, 6px 0 0 10px);
+  height: 113px;
+  width: 169px;
+  z-index: 1000;
 }
-
 
 nav {
+  color: #fff;
   font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color:#fff;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -62,10 +50,4 @@ nav {
       background-color: black;
     }
   }
-}
-
-.shopping-cart {
-  position: absolute;
-  top: 5px;
-  right: 20px;
 }

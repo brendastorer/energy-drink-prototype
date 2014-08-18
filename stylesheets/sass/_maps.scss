@@ -10,14 +10,14 @@ $page-colors: (
 );
 
 $logos: (
-  citrus-burst: url(../images/logo-citrus-burst.png),
-  kiwi-strawberry: url(../images/logo-kiwi-straw.png),
-  triple-berry: url(../images/logo-triple-berry.png),
-  lemon-lime-rush: url(../images/logo-lemon-lime.png),
-  grape-fusion: url(../images/logo-grape-fusion.png),
-  blue-raspberry: url(../images/logo-blue-rasp.png),
-  black-cherry: url(../images/logo-black-cherry.png),
-  wild-peach: url(../images/logo-wild-peach.png)
+  citrus-burst: url(../images/swirl-citrus-burst.svg),
+  kiwi-strawberry: url(../images/swirl-kiwi-straw.svg),
+  triple-berry: url(../images/swirl-triple-berry.svg),
+  lemon-lime-rush: url(../images/swirl-lemon-lime.svg),
+  grape-fusion: url(../images/swirl-grape-fusion.svg),
+  blue-raspberry: url(../images/swirl-blue-rasp.svg),
+  black-cherry: url(../images/swirl-black-cherry.svg),
+  wild-peach: url(../images/swirl-wild-peach.svg)
 );
 
 $bottles: (
@@ -33,18 +33,18 @@ $bottles: (
 
 @each $page-color, $color in $page-colors {
   .page-#{$page-color} {
-      background-color: $color;
+    background-color: $color;
   }
 }
 
 @each $logo, $swirl-image in $logos {
   .logo-#{$logo} {
-      background-image: $swirl-image;
+    background-image: $swirl-image;
   }
 }
 
 @each $bottle, $image in $bottles {
   .large-bottle-#{$bottle} {
-      background-image: $image;
+    background-image: $image;
   }
 }
