@@ -1,24 +1,23 @@
 $page-colors: (
-  citrus-burst: #f47c08,
-  kiwi-strawberry: #c33a89,
-  triple-berry: #cc3012,
-  lemon-lime-rush: #52a534,
-  grape-fusion: #724598,
-  blue-raspberry: #0c71b7,
-  black-cherry: #990b0d,
-  wild-peach: #e5644f
+  citrus-burst: $citrus-burst-bg-color,
+  kiwi-strawberry: $kiwi-strawberry-bg-color,
+  triple-berry: $triple-berry-bg-color,
+  lemon-lime-rush: $lemon-lime-rush-bg-color,
+  grape-fusion: $grape-fusion-bg-color,
+  blue-raspberry: $blue-raspberry-bg-color,
+  black-cherry: $black-cherry-bg-color,
+  wild-peach: $wild-peach-bg-color
 );
 
-$logos: (
-  citrus-burst: url(../images/swirl-citrus-burst.svg),
-  kiwi-strawberry: url(../images/swirl-kiwi-straw.svg),
-  triple-berry: url(../images/swirl-triple-berry.svg),
-  lemon-lime-rush: url(../images/swirl-lemon-lime.svg),
-  grape-fusion: url(../images/swirl-grape-fusion.svg),
-  blue-raspberry: url(../images/swirl-blue-rasp.svg),
-  black-cherry: url(../images/swirl-black-cherry.svg),
-  wild-peach: url(../images/swirl-wild-peach.svg)
-);
+$logo-swirls:
+  (citrus-burst, $citrus-burst-front, $citrus-burst-back),
+  (kiwi-strawberry, $kiwi-strawberry-front, $kiwi-strawberry-back),
+  (triple-berry, $triple-berry-front, $triple-berry-back),
+  (lemon-lime-rush, $lemon-lime-rush-front, $lemon-lime-rush-back),
+  (grape-fusion, $grape-fusion-front, $grape-fusion-back),
+  (blue-raspberry, $blue-raspberry-front, $blue-raspberry-back),
+  (black-cherry, $black-cherry-front, $black-cherry-back),
+  (wild-peach, $wild-peach-front, $wild-peach-back);
 
 $bottles: (
   citrus-burst: url(../images/bottle-citrus-burst.png),
@@ -37,9 +36,16 @@ $bottles: (
   }
 }
 
-@each $logo, $swirl-image in $logos {
-  .logo-#{$logo} {
-    background-image: $swirl-image;
+@each $logo-swirl, $swirl-front, $swirl-back in $logo-swirls {
+  .logo-#{$logo-swirl} {
+
+    .swirl-front {
+      fill: $swirl-front;
+    }
+
+    .swirl-back {
+      fill: $swirl-back;
+    }
   }
 }
 

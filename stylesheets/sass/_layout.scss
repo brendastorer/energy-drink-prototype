@@ -1,15 +1,20 @@
-#page {
-  font-family: Arial, sans-serif;
+body {
   background-image: url(../images/swirl-glow-bg.png);
   background-repeat: no-repeat;
   background-position: center -50px;
   background-size: 1067px;
+  color: white;
+  font-family: "ExpresswaySemiBold", Arial, sans-serif;
 }
 
 main {
-  width: 1100px;
-  margin: 0 auto 0 auto;
-  position: relative;
-  overflow: hidden;
   height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: $body-width;
+}
+
+a {
+  color: white;
 }

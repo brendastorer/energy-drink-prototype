@@ -1,0 +1,20 @@
+.flavor-nav {
+  font-size: .8em;
+  letter-spacing: .1em;
+  margin-top: 6em;
+  text-transform: uppercase;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 3px;
+  }
+}

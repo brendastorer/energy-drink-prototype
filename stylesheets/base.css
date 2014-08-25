@@ -40,29 +40,45 @@
 .page-wild-peach {
   background-color: #e5644f; }
 
-.logo-citrus-burst {
-  background-image: url(../images/swirl-citrus-burst.svg); }
+.logo-citrus-burst .swirl-front {
+  fill: #f15406; }
+.logo-citrus-burst .swirl-back {
+  fill: #fcaf17; }
 
-.logo-kiwi-strawberry {
-  background-image: url(../images/swirl-kiwi-straw.svg); }
+.logo-kiwi-strawberry .swirl-front {
+  fill: #b12a75; }
+.logo-kiwi-strawberry .swirl-back {
+  fill: #ee4c9b; }
 
-.logo-triple-berry {
-  background-image: url(../images/swirl-triple-berry.svg); }
+.logo-triple-berry .swirl-front {
+  fill: #e1090f; }
+.logo-triple-berry .swirl-back {
+  fill: #f26532; }
 
-.logo-lemon-lime-rush {
-  background-image: url(../images/swirl-lemon-lime.svg); }
+.logo-lemon-lime-rush .swirl-front {
+  fill: #3e8819; }
+.logo-lemon-lime-rush .swirl-back {
+  fill: #99ca3c; }
 
-.logo-grape-fusion {
-  background-image: url(../images/swirl-grape-fusion.svg); }
+.logo-grape-fusion .swirl-front {
+  fill: #502b71; }
+.logo-grape-fusion .swirl-back {
+  fill: #9f76b4; }
 
-.logo-blue-raspberry {
-  background-image: url(../images/swirl-blue-rasp.svg); }
+.logo-blue-raspberry .swirl-front {
+  fill: #00b1f0; }
+.logo-blue-raspberry .swirl-back {
+  fill: #0047a8; }
 
-.logo-black-cherry {
-  background-image: url(../images/swirl-black-cherry.svg); }
+.logo-black-cherry .swirl-front {
+  fill: #ed1c24; }
+.logo-black-cherry .swirl-back {
+  fill: #700000; }
 
-.logo-wild-peach {
-  background-image: url(../images/swirl-wild-peach.svg); }
+.logo-wild-peach .swirl-front {
+  fill: #f06b5d; }
+.logo-wild-peach .swirl-back {
+  fill: #f8ab9e; }
 
 .large-bottle-citrus-burst {
   background-image: url(../images/bottle-citrus-burst.png); }
@@ -88,19 +104,23 @@
 .large-bottle-wild-peach {
   background-image: url(../images/bottle-wild-peach.png); }
 
-#page {
-  font-family: Arial, sans-serif;
+body {
   background-image: url(../images/swirl-glow-bg.png);
   background-repeat: no-repeat;
   background-position: center -50px;
-  background-size: 1067px; }
+  background-size: 1067px;
+  color: white;
+  font-family: "ExpresswaySemiBold", Arial, sans-serif; }
 
 main {
-  width: 1100px;
-  margin: 0 auto 0 auto;
-  position: relative;
+  height: 500px;
+  margin: 0 auto;
   overflow: hidden;
-  height: 500px; }
+  position: relative;
+  width: 1100px; }
+
+a {
+  color: white; }
 
 header {
   box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -109,7 +129,7 @@ header {
   header section {
     margin: 0 auto;
     position: relative;
-    width: 1000px; }
+    width: 1100px; }
 
 .logo {
   position: absolute;
@@ -119,7 +139,7 @@ header {
   width: 121px;
   z-index: 10000; }
 
-.logo-swirl {
+#logo-swirl {
   position: absolute;
   top: 6px;
   left: 10px;
@@ -127,24 +147,40 @@ header {
   width: 169px;
   z-index: 1000; }
 
-nav {
+nav.main {
   color: #fff;
   font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px; }
-  nav ul {
+  nav.main ul {
     list-style-type: none; }
-  nav li {
+  nav.main li {
     display: inline-block; }
-  nav a {
+  nav.main a {
     color: #fff;
     display: block;
     margin: 0 22px;
     padding: 6px 20px; }
-    nav a:hover {
+    nav.main a:hover {
       background-color: black; }
+
+.flavor-nav {
+  font-size: .8em;
+  letter-spacing: .1em;
+  margin-top: 6em;
+  text-transform: uppercase; }
+  .flavor-nav ul {
+    list-style-type: none;
+    text-align: center; }
+  .flavor-nav li {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 3px; }
 
 a {
   text-decoration: none; }
@@ -189,55 +225,9 @@ a {
   z-index: 100; }
 
 /* Product Bottles Pages */
-#large-bottle {
+.large-bottle {
   width: 154px;
   height: 459px;
   position: absolute;
   top: 0;
   right: 40px; }
-
-#btl-nav {
-  list-style-type: none;
-  position: absolute;
-  top: 150px;
-  left: 210px;
-  text-align: left;
-  text-indent: -9999px;
-  width: 100%; }
-
-#btl-nav li {
-  float: left; }
-
-#btl-nav li a {
-  background-image: url(../images/product-tabs.png);
-  background-repeat: no-repeat;
-  display: block;
-  height: 35px; }
-
-#btl-nav li.the-flavor a {
-  width: 127px;
-  background-position: 0 0; }
-
-#btl-nav li.nutri-facts a {
-  width: 152px;
-  background-position: -127px 0; }
-
-#btl-nav li.ingredients a {
-  width: 123px;
-  background-position: -278px 0; }
-
-#btl-nav li.buy-now a {
-  width: 120px;
-  background-position: -401px 0; }
-
-#btl-nav li.the-flavor a:hover, #btl-nav li.the-flavor a.active {
-  background-position: 0 -36px; }
-
-#btl-nav li.nutri-facts a:hover, #btl-nav li.nutri-facts a.active {
-  background-position: -127px -36px; }
-
-#btl-nav li.ingredients a:hover, #btl-nav li.ingredients a.active {
-  background-position: -278px -36px; }
-
-#btl-nav li.buy-now a:hover, #btl-nav li.buy-now a.active {
-  background-position: -401px -36px; }

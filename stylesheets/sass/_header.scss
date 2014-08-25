@@ -17,14 +17,14 @@ header {
   z-index: 10000;
 }
 
-.logo-swirl {
+#logo-swirl {
   @include position(absolute, 6px 0 0 10px);
   height: 113px;
   width: 169px;
   z-index: 1000;
 }
 
-nav {
+nav.main {
   color: #fff;
   font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
   font-size: 16px;

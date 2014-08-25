@@ -52,67 +52,10 @@ a {
 
 /* Product Bottles Pages */
 
-#large-bottle {
+.large-bottle {
 	width:154px;
 	height:459px;
 	position:absolute;
 	top:0;
 	right:40px;
-}
-
-#btl-nav {
-	list-style-type:none;
-	position:absolute;
-	top:150px;
-	left:210px;
-	text-align:left;
-	text-indent:-9999px;
-	width:100%;
-}
-
-#btl-nav li {
-	float:left;
-}
-
-#btl-nav li a {
-	background-image: url(../images/product-tabs.png);
-	background-repeat:no-repeat;
-	display:block;
-	height:35px;
-}
-
-#btl-nav li.the-flavor a {
-	width:127px;
-	background-position: 0 0;
-}
-
-#btl-nav li.nutri-facts a {
-	width:152px;
-	background-position: -127px 0;
-}
-
-#btl-nav li.ingredients a {
-	width:123px;
-	background-position: -278px 0;
-}
-
-#btl-nav li.buy-now a {
-	width:120px;
-	background-position: -401px 0;
-}
-
-#btl-nav li.the-flavor a:hover, #btl-nav li.the-flavor a.active {
-	background-position: 0 -36px;
-}
-
-#btl-nav li.nutri-facts a:hover, #btl-nav li.nutri-facts a.active{
-	background-position: -127px -36px;
-}
-
-#btl-nav li.ingredients a:hover, #btl-nav li.ingredients a.active {
-	background-position: -278px -36px;
-}
-
-#btl-nav li.buy-now a:hover, #btl-nav li.buy-now a.active {
-	background-position: -401px -36px;
 }
