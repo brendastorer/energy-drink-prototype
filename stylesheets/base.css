@@ -19,87 +19,87 @@
 .page-citrus-burst {
   background-color: #f47c08; }
 
-.page-kiwi-strawberry {
-  background-color: #c33a89; }
-
-.page-triple-berry {
-  background-color: #cc3012; }
-
-.page-lemon-lime-rush {
-  background-color: #52a534; }
-
-.page-grape-fusion {
-  background-color: #724598; }
-
-.page-blue-raspberry {
-  background-color: #0c71b7; }
-
-.page-black-cherry {
-  background-color: #990b0d; }
-
-.page-wild-peach {
-  background-color: #e5644f; }
-
 .logo-citrus-burst .swirl-front {
   fill: #f15406; }
 .logo-citrus-burst .swirl-back {
   fill: #fcaf17; }
+
+.large-bottle-citrus-burst {
+  background-image: url(../images/bottle-citrus-burst.png); }
+
+.page-kiwi-strawberry {
+  background-color: #c33a89; }
 
 .logo-kiwi-strawberry .swirl-front {
   fill: #b12a75; }
 .logo-kiwi-strawberry .swirl-back {
   fill: #ee4c9b; }
 
+.large-bottle-kiwi-strawberry {
+  background-image: url(../images/bottle-kiwi-strawberry.png); }
+
+.page-triple-berry {
+  background-color: #cc3012; }
+
 .logo-triple-berry .swirl-front {
   fill: #e1090f; }
 .logo-triple-berry .swirl-back {
   fill: #f26532; }
+
+.large-bottle-triple-berry {
+  background-image: url(../images/bottle-triple-berry.png); }
+
+.page-lemon-lime-rush {
+  background-color: #52a534; }
 
 .logo-lemon-lime-rush .swirl-front {
   fill: #3e8819; }
 .logo-lemon-lime-rush .swirl-back {
   fill: #99ca3c; }
 
+.large-bottle-lemon-lime-rush {
+  background-image: url(../images/bottle-lemon-lime-rush.png); }
+
+.page-grape-fusion {
+  background-color: #724598; }
+
 .logo-grape-fusion .swirl-front {
   fill: #502b71; }
 .logo-grape-fusion .swirl-back {
   fill: #9f76b4; }
+
+.large-bottle-grape-fusion {
+  background-image: url(../images/bottle-grape-fusion.png); }
+
+.page-blue-raspberry {
+  background-color: #0c71b7; }
 
 .logo-blue-raspberry .swirl-front {
   fill: #00b1f0; }
 .logo-blue-raspberry .swirl-back {
   fill: #0047a8; }
 
+.large-bottle-blue-raspberry {
+  background-image: url(../images/bottle-blue-raspberry.png); }
+
+.page-black-cherry {
+  background-color: #990b0d; }
+
 .logo-black-cherry .swirl-front {
   fill: #ed1c24; }
 .logo-black-cherry .swirl-back {
   fill: #700000; }
 
+.large-bottle-black-cherry {
+  background-image: url(../images/bottle-black-cherry.png); }
+
+.page-wild-peach {
+  background-color: #e5644f; }
+
 .logo-wild-peach .swirl-front {
   fill: #f06b5d; }
 .logo-wild-peach .swirl-back {
   fill: #f8ab9e; }
-
-.large-bottle-citrus-burst {
-  background-image: url(../images/bottle-citrus-burst.png); }
-
-.large-bottle-kiwi-strawberry {
-  background-image: url(../images/bottle-kiwi-straw.png); }
-
-.large-bottle-triple-berry {
-  background-image: url(../images/bottle-triple-berry.png); }
-
-.large-bottle-lemon-lime-rush {
-  background-image: url(../images/bottle-lemon-lime.png); }
-
-.large-bottle-grape-fusion {
-  background-image: url(../images/bottle-grape-fusion.png); }
-
-.large-bottle-blue-raspberry {
-  background-image: url(../images/bottle-blue-rasp.png); }
-
-.large-bottle-black-cherry {
-  background-image: url(../images/bottle-black-cherry.png); }
 
 .large-bottle-wild-peach {
   background-image: url(../images/bottle-wild-peach.png); }

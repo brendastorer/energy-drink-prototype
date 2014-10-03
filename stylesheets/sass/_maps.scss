@@ -1,43 +1,20 @@
-$page-colors: (
-  citrus-burst: $citrus-burst-bg-color,
-  kiwi-strawberry: $kiwi-strawberry-bg-color,
-  triple-berry: $triple-berry-bg-color,
-  lemon-lime-rush: $lemon-lime-rush-bg-color,
-  grape-fusion: $grape-fusion-bg-color,
-  blue-raspberry: $blue-raspberry-bg-color,
-  black-cherry: $black-cherry-bg-color,
-  wild-peach: $wild-peach-bg-color
+$flavors: (
+  (citrus-burst, $citrus-burst-bg-color, $citrus-burst-front, $citrus-burst-back),
+  (kiwi-strawberry, $kiwi-strawberry-bg-color, $kiwi-strawberry-front, $kiwi-strawberry-back),
+  (triple-berry, $triple-berry-bg-color, $triple-berry-front, $triple-berry-back),
+  (lemon-lime-rush, $lemon-lime-rush-bg-color, $lemon-lime-rush-front, $lemon-lime-rush-back),
+  (grape-fusion, $grape-fusion-bg-color, $grape-fusion-front, $grape-fusion-back),
+  (blue-raspberry, $blue-raspberry-bg-color, $blue-raspberry-front, $blue-raspberry-back),
+  (black-cherry, $black-cherry-bg-color, $black-cherry-front, $black-cherry-back),
+  (wild-peach, $wild-peach-bg-color, $wild-peach-front, $wild-peach-back)
 );
 
-$logo-swirls:
-  (citrus-burst, $citrus-burst-front, $citrus-burst-back),
-  (kiwi-strawberry, $kiwi-strawberry-front, $kiwi-strawberry-back),
-  (triple-berry, $triple-berry-front, $triple-berry-back),
-  (lemon-lime-rush, $lemon-lime-rush-front, $lemon-lime-rush-back),
-  (grape-fusion, $grape-fusion-front, $grape-fusion-back),
-  (blue-raspberry, $blue-raspberry-front, $blue-raspberry-back),
-  (black-cherry, $black-cherry-front, $black-cherry-back),
-  (wild-peach, $wild-peach-front, $wild-peach-back);
-
-$bottles: (
-  citrus-burst: url(../images/bottle-citrus-burst.png),
-  kiwi-strawberry: url(../images/bottle-kiwi-straw.png),
-  triple-berry: url(../images/bottle-triple-berry.png),
-  lemon-lime-rush: url(../images/bottle-lemon-lime.png),
-  grape-fusion: url(../images/bottle-grape-fusion.png),
-  blue-raspberry: url(../images/bottle-blue-rasp.png),
-  black-cherry: url(../images/bottle-black-cherry.png),
-  wild-peach: url(../images/bottle-wild-peach.png)
-);
-
-@each $page-color, $color in $page-colors {
-  .page-#{$page-color} {
-    background-color: $color;
+@each $flavor, $bg-color, $swirl-front, $swirl-back in $flavors {
+  .page-#{$flavor} {
+    background-color: $bg-color;
   }
-}
 
-@each $logo-swirl, $swirl-front, $swirl-back in $logo-swirls {
-  .logo-#{$logo-swirl} {
+  .logo-#{$flavor} {
 
     .swirl-front {
       fill: $swirl-front;
@@ -47,10 +24,8 @@ $bottles: (
       fill: $swirl-back;
     }
   }
-}
 
-@each $bottle, $image in $bottles {
-  .large-bottle-#{$bottle} {
-    background-image: $image;
+  .large-bottle-#{$flavor} {
+    background-image: url(../images/bottle-#{$flavor}.png);
   }
 }
