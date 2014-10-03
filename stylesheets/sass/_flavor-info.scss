@@ -28,9 +28,8 @@
 }
 
 .large-bottle {
-  height: 459px;
-  position: absolute;
-  right: 40px;
-  top: 0;
-  width: 154px;
+  @include position(absolute, 0px 40px 0 0);
+  background-size: 173px 500px;
+  height: 500px;
+  width: 173px;
 }

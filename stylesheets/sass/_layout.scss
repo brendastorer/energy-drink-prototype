@@ -6,7 +6,7 @@ html {
 body {
   @include linear-gradient(#f9f9ea, #f9f9ea, horizontal);
   @include background-image(
-    radial-gradient(center, ellipse cover, rgba(249, 249, 234, 0.3) 0%,rgba(249, 249, 234, 0.15) 15%,rgba(249, 249, 234, 0) 100%)
+    radial-gradient(center, ellipse cover, rgba(249, 249, 234, 0.3) 0%,rgba(249, 249, 234, 0.15) 30%,rgba(249, 249, 234, 0) 100%)
   );
   background-position: center 10em;
   color: $white;

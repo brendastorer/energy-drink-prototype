@@ -113,8 +113,8 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9ea), color-stop(50%, #f9f9ea), color-stop(100%, horizontal));
   background-image: -webkit-linear-gradient(#f9f9ea, #f9f9ea, horizontal);
   background-image: linear-gradient(#f9f9ea, #f9f9ea, horizontal);
-  background-image: -webkit-radial-gradient(center,  ellipse cover, rgba(249, 249, 234, 0.3) 0%, rgba(249, 249, 234, 0.15) 15%, rgba(249, 249, 234, 0) 100%);
-  background-image: radial-gradient( ellipse  at center, rgba(249, 249, 234, 0.3) 0%, rgba(249, 249, 234, 0.15) 15%, rgba(249, 249, 234, 0) 100%);
+  background-image: -webkit-radial-gradient(center,  ellipse cover, rgba(249, 249, 234, 0.3) 0%, rgba(249, 249, 234, 0.15) 30%, rgba(249, 249, 234, 0) 100%);
+  background-image: radial-gradient( ellipse  at center, rgba(249, 249, 234, 0.3) 0%, rgba(249, 249, 234, 0.15) 30%, rgba(249, 249, 234, 0) 100%);
   background-position: center 10em;
   color: white;
   font-family: "ExpresswaySemiBold", Arial, sans-serif;
@@ -160,7 +160,6 @@ header {
   z-index: 1000; }
 
 .site-nav {
-  color: #fff;
   font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
@@ -202,17 +201,29 @@ header {
     padding: 10px 20px; }
 
 .large-bottle {
-  height: 459px;
   position: absolute;
+  top: 0px;
   right: 40px;
-  top: 0;
-  width: 154px; }
+  background-size: 173px 500px;
+  height: 500px;
+  width: 173px; }
 
 .footer-nav-container {
-  background-color: black;
-  width: 100%; }
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: black; }
 
 .footer-nav {
-  width: 1100px;
+  height: 94px;
   margin: 0 auto;
-  position: relative; }
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+  .footer-nav a {
+    margin: 0 10px;
+    position: relative;
+    top: 34px; }
+    .footer-nav a:hover, .footer-nav a.active {
+      top: 14px; }
