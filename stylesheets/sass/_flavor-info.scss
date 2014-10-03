@@ -1,4 +1,12 @@
-.flavor-nav {
+.flavor-info {
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: $body-width;
+}
+
+.info-nav {
   font-size: .8em;
   letter-spacing: .1em;
   margin-top: 6em;
@@ -14,7 +22,15 @@
     border-top-right-radius: 10px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    padding: 10px 20px;
     margin: 3px;
+    padding: 10px 20px;
   }
+}
+
+.large-bottle {
+  height: 459px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  width: 154px;
 }

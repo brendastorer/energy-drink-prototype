@@ -24,13 +24,13 @@ header {
   z-index: 1000;
 }
 
-nav.main {
+.site-nav {
   color: #fff;
-  font-family: "ExpresswayCondensedSemiBold", Arial, sans-serif;
+  font-family: $font-site-nav;
   font-size: 16px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
 
   ul {
     list-style-type: none;
@@ -41,7 +41,7 @@ nav.main {
   }
 
   a {
-    color: #fff;
+    color: $white;
     display: block;
     margin: 0 22px;
     padding: 6px 20px;
